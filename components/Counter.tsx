@@ -21,7 +21,13 @@ const Counter = () => {
         <div data-testid="counter" style={{ marginTop: '20px', padding: '5px', width: '350px', border: '2px solid grey' }}>
             {
                 count.map((num, index) => (
-                    <div data-testid="counter-number" key={`counter-${num}-${index + 1}`} style={{ color: 'red' }}>{num}</div>
+                    <div
+                        data-testid="counter-number"
+                        key={`counter-${num}-${index + 1}`}
+                        style={{ color: 'red' }}
+                    >
+                        {num}
+                    </div>
                 ))
             }
             <div style={{ paddingTop: '20px', display: 'flex', justifyContent: 'end' }}>
