@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Counter from '../components/Counter';
 import load from '../load-script';
 
 const Page = () => {
@@ -21,6 +22,7 @@ const Page = () => {
     return (
         <div ref={ref}>
             <div data-testid="sample">Hello</div>
+            <Counter />
         </div>
     );
 };
